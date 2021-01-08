@@ -1,0 +1,15 @@
+<h1>Search Results</h1>
+
+<% @poems[0..9].each do |poem| %>
+  <ul class='poems'>
+    <p class='title'>
+      <%= poem.title %>
+    </p>
+    <p class='author'>
+      <%= poem.author %>
+    </p>
+    <p class='text'>
+      <%= poem.text %>
+    </p>
+  </ul>
+<% end %>
